@@ -1,0 +1,67 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+.PigLatin{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.PigLatin .input{
+    min-width: 300px;
+    width: auto;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border: 1px dotted blue;
+    outline-color: red;
+    overflow: hidden;
+
+}
+
+.PigLatin .status{
+    position: absolute;
+    display: none;
+}
+.PigLatin .button{
+    color: rgba(255, 255, 0, 0.3);
+    font-size: 20px;
+    text-shadow: 2px 2px 2px lightcoral;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    outline: none;
+    box-shadow: 3px 3px 3px 0 lightcoral;
+    transition: all;
+}
+.PigLatin .button:after{
+    display: none;
+    content: "";
+    position: absolute;
+    margin-left: 12px;
+    width: 100px;
+    height: 1px;
+    background-color: black;
+}
+.PigLatin .button:hover{
+
+}
+.PigLatin .button.disabled {
+    pointer-events: none;
+    color: rgba(128, 128, 128,0.3);
+    border-color: rgba(128, 128, 128,0.3);
+    outline: rgba(128, 128, 128,0.3);
+}
+.PigLatin .output{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+@keyframes color{
+0% {
+    transform: rotate(0deg);
+}
+
+100% {
+    transform: rotate(360deg);
+}
+}
